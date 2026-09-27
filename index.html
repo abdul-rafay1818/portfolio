@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Rafay — Python Developer in Progress | AI & ML Aspirant</title>
+  <meta name="description" content="Personal portfolio of Abdul Rafay, a Class 12 student and Python Developer building practical projects and working toward AI & Machine Learning.">
+  <meta name="author" content="Abdul Rafay">
+  <meta name="keywords" content="Abdul Rafay, Python Developer, AI, Machine Learning, Portfolio, Class 12, Pakistan">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Rafay — Python Developer in Progress | AI & ML Aspirant">
+  <meta property="og:description" content="Personal portfolio of Abdul Rafay, ICS student and Python Developer building practical projects and working toward AI & Machine Learning.">
+  <meta property="og:site_name" content="Abdul Rafay Portfolio">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abdul Rafay — Python Developer in Progress | AI & ML Aspirant">
+  <meta name="twitter:description" content="Personal portfolio of Abdul Rafay, ICS 12 student and Python Developer building practical projects and working toward AI & Machine Learning.">
+
+  <!-- Theme color for mobile browser bars -->
+  <meta name="theme-color" content="#09090b">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Favicon / SVG Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><text x='50' y='65' font-size='48' font-weight='bold' font-family='sans-serif' fill='%23ffffff' text-anchor='middle'>AR</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Subtle Grid -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Abdul Rafay - Back to top">
+        <span class="logo-text">Abdul Rafay</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>PYTHON DEVELOPER IN PROGRESS</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-name">Abdul Rafay</span>.
+          </h1>
+
+          <p class="hero-description">
+            Learning Python, building practical projects, and working toward Artificial Intelligence & Machine Learning.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="https://github.com/abdul-rafay1818" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Minimal Developer Monogram & Code Visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <span class="terminal-title">developer.py</span>
+            </div>
+            <pre class="terminal-body"><code><span class="c-comment"># Personal Developer Profile</span>
+<span class="c-keyword">class</span> <span class="c-class">Developer</span>:
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self):
+        self.name = <span class="c-str">"Abdul Rafay"</span>
+        self.status = <span class="c-str">"ICS Student"</span>
+        self.focus = [<span class="c-str">"Python"</span>, <span class="c-str">"AI"</span>, <span class="c-str">"ML"</span>]
+        self.goal = <span class="c-str">"AI/ML Engineer"</span>
+
+    <span class="c-keyword">def</span> <span class="c-func">build_future</span>(self):
+        <span class="c-keyword">while</span> <span class="c-builtin">True</span>:
+            self.practice_daily()
+            self.build_projects()</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="paragraph-lead">
+              I'm a Class 12 student currently focused on learning Python and building practical projects. I enjoy turning programming concepts into useful applications and improving my problem-solving skills through hands-on practice.
+            </p>
+            <p class="paragraph-sub">
+              I’m not just learning to code — I’m building the foundation for where I want to go. From programming and software development today to Artificial Intelligence and Machine Learning tomorrow, I’m focused on learning, building, and getting better with every step.
+
+            </p>
+          </div>
+
+          <div class="about-meta-panel">
+            <div class="meta-item">
+              <span class="meta-label">Current Role</span>
+              <span class="meta-value">Python Developer in Progress</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Education</span>
+              <span class="meta-value">ICS Physics</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Pakistan</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Core Target</span>
+              <span class="meta-value">AI & Machine Learning Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">A focused overview of core programming foundations and upcoming technical milestones.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Currently Learning -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-status-indicator active-indicator"></div>
+              <div>
+                <h3 class="skills-group-title">Currently Learning & Mastering</h3>
+                <span class="skills-group-sub">Core Python & Programming Foundations</span>
+              </div>
+            </div>
+
+            <div class="tags-cluster">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Functions</span>
+              <span class="skill-tag">File Handling</span>
+              <span class="skill-tag">Lists</span>
+              <span class="skill-tag">Tuples</span>
+              <span class="skill-tag">Sets</span>
+              <span class="skill-tag">Dictionaries</span>
+              <span class="skill-tag">Loops</span>
+              <span class="skill-tag">Conditional Statements</span>
+              <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+            </div>
+          </div>
+
+          <!-- Next Up / Roadmap -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-status-indicator roadmap-indicator"></div>
+              <div>
+                <h3 class="skills-group-title">Next Up on Roadmap</h3>
+                <span class="skills-group-sub">Data, Tooling & Machine Learning</span>
+              </div>
+            </div>
+
+            <div class="tags-cluster">
+              <span class="skill-tag roadmap-tag">Git & GitHub</span>
+              <span class="skill-tag roadmap-tag">SQL</span>
+              <span class="skill-tag roadmap-tag">NumPy</span>
+              <span class="skill-tag roadmap-tag">Pandas</span>
+              <span class="skill-tag roadmap-tag">Machine Learning</span>
+              <span class="skill-tag roadmap-tag">Artificial Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">Real-world Python programs focused on clean logic, file manipulation, and automation.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: FinTrack -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-num">01</span>
+              <a href="https://github.com/abdul-rafay1818/personal_finance_dashboard" target="_blank" rel="noopener noreferrer" class="project-external-link" aria-label="View FinTrack on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">CSV Finance Analyzer</div>
+              <h3 class="project-title">FinTrack</h3>
+              <p class="project-desc">
+                Python-based finance analyzer that reads CSV data and calculates income, expenses, balance, savings, and category-wise spending.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">CSV</span>
+                <span class="p-tag">File Handling</span>
+              </div>
+              <a href="https://github.com/abdul-rafay1818/personal_finance_dashboard" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                View Project <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Jarvis (Optional / Upcoming) -->
+          <!--
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-num">02</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-external-link" aria-label="View Jarvis on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">Python Automation Project</div>
+              <h3 class="project-title">Jarvis</h3>
+              <p class="project-desc">
+                An experimental Python project focused on learning automation, functions, and working with external libraries.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">Automation</span>
+                <span class="p-tag">Libraries</span>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                View Project <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+          -->
+
+          <!-- Project 3: Python File Manager (Optional / Upcoming) -->
+          <!--
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-num">03</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-external-link" aria-label="View Python File Manager on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-top">System & Storage Utilities</div>
+              <h3 class="project-title">Python File Manager</h3>
+              <p class="project-desc">
+                Collection of Python programs created to understand reading, writing, organizing, and managing files efficiently.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">File I/O</span>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                View Project <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Learning Journey Section -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Learning Journey</h2>
+          <p class="section-subtitle">A step-by-step roadmap from fundamental programming to AI engineering.</p>
+        </div>
+
+        <div class="journey-legend">
+          <div class="legend-item">
+            <span class="legend-dot status-completed"></span>
+            <span>Completed</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot status-current"></span>
+            <span>In Progress</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot status-upcoming"></span>
+            <span>Upcoming Target</span>
+          </div>
+        </div>
+
+        <div class="journey-timeline">
+          <!-- Step 1 -->
+          <div class="journey-step is-completed">
+            <div class="step-marker">01</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">Python Fundamentals</h3>
+              <p class="step-desc">Syntax, variables, input/output & data types.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="journey-step is-completed">
+            <div class="step-marker">02</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">Lists / Tuples / Sets</h3>
+              <p class="step-desc">Data structures, indexing, immutability & set theory.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="journey-step is-completed">
+            <div class="step-marker">03</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">Dictionaries</h3>
+              <p class="step-desc">Key-value mappings, nested lookups & methods.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="journey-step is-completed">
+            <div class="step-marker">04</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">Loops & Conditions</h3>
+              <p class="step-desc">For/while iterations, branching logic & flow control.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="journey-step is-completed">
+            <div class="step-marker">05</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">Functions</h3>
+              <p class="step-desc">Parameters, return values, scope & reusability.</p>
+            </div>
+          </div>
+          
+          <!-- Step 6 -->
+          
+          <div class="journey-step is-completed">
+            <div class="step-marker">06</div>
+            <div class="step-card">
+              <span class="step-status">Completed</span>
+              <h3 class="step-title">File Handling</h3>
+              <p class="step-desc">Reading, writing, context managers & CSV processing.</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="journey-step is-current">
+            <div class="step-marker">07</div>
+            <div class="step-card">
+              <span class="step-status">In Progress</span>
+              <h3 class="step-title">OOP</h3>
+              <p class="step-desc">Classes, objects, methods, encapsulation & inheritance.</p>
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="journey-step is-upcoming">
+            <div class="step-marker">08</div>
+            <div class="step-card">
+              <span class="step-status">Upcoming</span>
+              <h3 class="step-title">Git & GitHub</h3>
+              <p class="step-desc">Version control, branching, committing & repositories.</p>
+            </div>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="journey-step is-upcoming">
+            <div class="step-marker">09</div>
+            <div class="step-card">
+              <span class="step-status">Upcoming</span>
+              <h3 class="step-title">SQL</h3>
+              <p class="step-desc">Relational databases, querying, filtering & joins.</p>
+            </div>
+          </div>
+
+          <!-- Step 10 -->
+          <div class="journey-step is-upcoming">
+            <div class="step-marker">10</div>
+            <div class="step-card">
+              <span class="step-status">Upcoming</span>
+              <h3 class="step-title">NumPy / Pandas</h3>
+              <p class="step-desc">Vectorized math, dataframes & data transformation.</p>
+            </div>
+          </div>
+
+          <!-- Step 11 -->
+          <div class="journey-step is-upcoming">
+            <div class="step-marker">11</div>
+            <div class="step-card">
+              <span class="step-status">Upcoming</span>
+              <h3 class="step-title">Machine Learning</h3>
+              <p class="step-desc">Algorithms, model training, evaluation & metrics.</p>
+            </div>
+          </div>
+
+          <!-- Step 12 -->
+          <div class="journey-step is-upcoming">
+            <div class="step-marker">12</div>
+            <div class="step-card">
+              <span class="step-status">Upcoming Goal</span>
+              <h3 class="step-title">AI Engineering</h3>
+              <p class="step-desc">Deep learning, neural architectures & intelligent agents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="contact-subtext">
+            I'm currently learning, building, and documenting my journey into AI & Machine Learning. Whether you'd like to discuss Python, collaborate, or share advice, feel free to reach out.
+          </p>
+
+          <div class="contact-links-grid">
+            <!-- GitHub Link -->
+            <a href="https://github.com/abdul-rafay1818" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-item-title">GitHub</span>
+                <span class="contact-item-detail">github.com</span>
+              </div>
+              <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/abdul-rafay-9975a0426/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-item-title">LinkedIn</span>
+                <span class="contact-item-detail">linkedin.com</span>
+              </div>
+              <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <!-- Email Link -->
+            <a href="mailto:contact@abdulrafay.dev" class="contact-item" id="email-link">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-item-title">Email</span>
+                <span class="contact-item-detail">contact@abdulrafay.dev</span>
+              </div>
+              <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; 2026 Abdul Rafay. All rights reserved.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <span>Back to top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
